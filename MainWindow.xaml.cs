@@ -26,8 +26,8 @@ namespace MouseClickSender
         {
             InitializeComponent();
 
-            tbHH2.Text = DateTime.Now.Hour.ToString();
-            tbMM2.Text = DateTime.Now.Minute.ToString();
+            txtHH2.Text = DateTime.Now.Hour.ToString();
+            txtMM2.Text = DateTime.Now.Minute.ToString();
         }
 
         //This is a replacement for Cursor.Position in WinForms
@@ -36,6 +36,20 @@ namespace MouseClickSender
 
         [DllImport("user32.dll")]
         public static extern void mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
+
+        public struct POINT
+        {
+            public int X;
+            public int Y;
+            public POINT(int x, int y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
+        }
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern bool GetCursorPos(out POINT pt);
 
         public const int MOUSEEVENTF_LEFTDOWN = 0x02;
         public const int MOUSEEVENTF_LEFTUP = 0x04;
@@ -48,6 +62,7 @@ namespace MouseClickSender
         }
 
         private DispatcherTimer timer;
+        private DispatcherTimer timer2;
         TimeSpan targetSpan;
         TimeSpan timerCounter;
 
@@ -56,29 +71,29 @@ namespace MouseClickSender
         private void TryStart()
         {
             int targetX, targetY;
-            if (!int.TryParse(tbX.Text, out targetX))
+            if (!int.TryParse(txtX.Text, out targetX))
             {
                 throw new Exception("坐标X 需要为数值类型");
             }
 
-            if (!int.TryParse(tbY.Text, out targetY))
+            if (!int.TryParse(txtY.Text, out targetY))
             {
                 throw new Exception("坐标Y 需要为数值类型");
             }
 
             int hh, mm, ss;
 
-            if (!int.TryParse(tbHH.Text, out hh))
+            if (!int.TryParse(txtHH.Text, out hh))
             {
                 throw new Exception("时间需要为数值类型");
             }
 
-            if (!int.TryParse(tbMM.Text, out mm))
+            if (!int.TryParse(txtMM.Text, out mm))
             {
                 throw new Exception("时间需要为数值类型t");
             }
 
-            if (!int.TryParse(tbSS.Text, out ss))
+            if (!int.TryParse(txtSS.Text, out ss))
             {
                 throw new Exception("时间需要为数值类型");
             }
@@ -111,7 +126,7 @@ namespace MouseClickSender
                     if (chkWhere.IsChecked != true)
                     {
                         timer.Stop();
-                        btnRun.Content = "开启";
+                        btnRun.Content = "开启任务";
                     }
                 }
             };
@@ -121,7 +136,7 @@ namespace MouseClickSender
 
         private void btnRun_Click(object sender, RoutedEventArgs e)
         {
-            if (btnRun.Content.ToString() == "开启")
+            if (btnRun.Content.ToString() == "开启任务")
             {
                 try
                 {
@@ -135,7 +150,7 @@ namespace MouseClickSender
                         timer2.Interval = new TimeSpan(0, 1, 0);//
                         timer2.Tick += (s, e) =>
                         {
-                            if (tbHH2.Text == DateTime.Now.Hour.ToString() && tbMM2.Text == DateTime.Now.Minute.ToString())
+                            if (txtHH2.Text == DateTime.Now.Hour.ToString() && txtMM2.Text == DateTime.Now.Minute.ToString())
                             {
                                 TryStart();
                             }
@@ -148,7 +163,7 @@ namespace MouseClickSender
                 {
                     MessageBox.Show(ex.Message);
                 }
-                btnRun.Content = "关闭";
+                btnRun.Content = "关闭任务";
             }
             else
             {
@@ -159,6 +174,35 @@ namespace MouseClickSender
                 btnRun.Content = "开启";
                 lblNextClickIn.Content = "--:--:--";
             }
+        }
+
+        private void btnPosition_Click(object sender, RoutedEventArgs e)
+        {
+            if (timer2 != null)
+            {
+                btnPosition.Content = "开始定位";
+                timer2.Stop();
+            }
+            else
+            {
+                timer2 = new DispatcherTimer();
+                timer2.Interval = new TimeSpan(0, 0, 5);
+                timer2.Tick += (s1, e1) =>
+                {
+                    POINT p = new POINT();
+                    Point pp = Mouse.GetPosition(e.Source as FrameworkElement);//WPF方法
+                    if (GetCursorPos(out p))//API方法
+                    {
+                        MessageBox.Show(string.Format("GetCursorPos {0},{1}", p.X, p.Y));
+                        txtX.Text = p.X.ToString();
+                        txtY.Text = p.Y.ToString();
+                    }
+                };
+
+                timer2.Start();
+                btnPosition.Content = "关闭定位";
+            }            
+            
         }
     }
 }

@@ -14,27 +14,31 @@
         <StackPanel Orientation="Vertical" Width="164" Margin="0 5 0 5">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Label Content="坐标 X,Y:"/>
-                <TextBox x:Name="tbX" Text="961" Width="35" TextAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="tbY" Text="628" Width="35" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtX" Text="961" Width="35" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtY" Text="628" Width="35" TextAlignment="Center" VerticalContentAlignment="Center"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0 5 0 5">
                 <Label Content="间隔时间"/>
-                <TextBox x:Name="tbHH" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="tbMM" Text="20" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="tbSS" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtHH" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtMM" Text="20" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtSS" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0 5 0 20">
                 <Label Content="定时(HH MM)"/>
-                <TextBox x:Name="tbHH2" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="tbMM2" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>                
+                <TextBox x:Name="txtHH2" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtMM2" Text="00" Width="30" TextAlignment="Center" VerticalContentAlignment="Center"/>                
             </StackPanel>
 
             <CheckBox x:Name="chkType" Content="定时执行" IsChecked="False" Margin="0 5 0 5" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" />
             <CheckBox x:Name="chkWhere" Content="是否循环" IsChecked="True"  Margin="0 5 0 5" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" />
 
-            <Button x:Name="btnRun"  Content="开启" Margin="0 10 0 10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Click="btnRun_Click"/>
+            <StackPanel Name="stackpanel1" Orientation="Horizontal">
+                <Button x:Name="btnPosition"  Content="开始定位" Margin="0 10 0 10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Click="btnPosition_Click"/>                
+                <Button x:Name="btnRun"  Content="开启任务" Margin="0 10 0 10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Click="btnRun_Click"/>
+            </StackPanel>
+            
 
             <StackPanel Orientation="Horizontal">
                 <Label Content="间隔倒计时:"/>
