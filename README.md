@@ -6,7 +6,7 @@
 
 使用说明：
 
-> 运行 \bin\Debug\net5.0-windows\MouseClickSender.exe
+> 运行 MouseClickSender.exe
 
 开关说明：
 > '**定时执行**' : 于(定时)指定时分时间，逐分钟执行到设置时间后开始执行点击事件，取消勾选则立即执行
