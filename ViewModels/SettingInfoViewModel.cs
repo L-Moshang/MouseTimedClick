@@ -73,6 +73,11 @@ namespace MouseClickSender.ViewModels
             }
             else
             {
+                if (timer != null)
+                {
+                    timer.Stop();
+                }
+
                 MainWindowInfo.StrRun = "开启任务";
                 MainWindowInfo.StrCountdown = "--:--:--";
             }

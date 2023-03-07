@@ -24,6 +24,10 @@ D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x
 D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\Newtonsoft.Json.dll
 D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\ShowMeTheXAML.dll
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\App.baml
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\View\MainWindow.g.cs
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\View\MainWindow.baml
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\MouseClickSender.csproj.CopyComplete
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\DryIoc.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\Prism.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\Prism.DryIoc.Wpf.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\win-x64\Prism.Wpf.dll
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\Views\MainWindow.g.cs
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\win-x64\Views\MainWindow.baml
