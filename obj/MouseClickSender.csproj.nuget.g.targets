@@ -3,4 +3,8 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)showmethexaml.msbuild\2.0.0\build\netstandard2.0\ShowMeTheXAML.MSBuild.targets" Condition="Exists('$(NuGetPackageRoot)showmethexaml.msbuild\2.0.0\build\netstandard2.0\ShowMeTheXAML.MSBuild.targets')" />
+    <Import Project="$(NuGetPackageRoot)materialdesignthemes\4.8.0\build\MaterialDesignThemes.targets" Condition="Exists('$(NuGetPackageRoot)materialdesignthemes\4.8.0\build\MaterialDesignThemes.targets')" />
+  </ImportGroup>
 </Project>

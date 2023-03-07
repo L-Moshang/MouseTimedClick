@@ -1,0 +1,2 @@
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.pdb
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.exe
