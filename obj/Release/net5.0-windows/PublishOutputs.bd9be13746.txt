@@ -1,5 +1,0 @@
-D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.exe
-D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.dll
-D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.deps.json
-D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.runtimeconfig.json
-D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\publish\MouseClickSender.pdb
