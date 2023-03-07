@@ -25,5 +25,9 @@ D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\ShowMeT
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\App.baml
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\MouseClickSender.csproj.CopyComplete
 D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\View\MainWindow.g.cs
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\View\MainWindow.baml
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\DryIoc.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\Prism.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\Prism.DryIoc.Wpf.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Debug\net5.0-windows\Prism.Wpf.dll
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Debug\net5.0-windows\Views\MainWindow.baml

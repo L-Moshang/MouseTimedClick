@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vkf+aTD68zxGlbl35VeJ1oE92Z7rel5DwuBVPluVci7l8inTSCv57MjH8RfWaCpNAmsoxJnPco5Fheue1Ev82w==",
+  "dgSpecHash": "XX/ApWhxzsbstp/iozjqr6GIEUqSe931z1DXiFkhLQTPT2aOhmv7NYYGvbRpmcRdRY4nBk8/6gBSWC553gGW4g==",
   "success": true,
   "projectFilePath": "D:\\Users\\H0766962\\source\\repos\\MouseClickSender\\MouseClickSender.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\H0766962\\.nuget\\packages\\materialdesigncolors\\2.1.2\\materialdesigncolors.2.1.2.nupkg.sha512",
+    "C:\\Users\\H0766962\\.nuget\\packages\\materialdesignthemes\\4.8.0\\materialdesignthemes.4.8.0.nupkg.sha512",
+    "C:\\Users\\H0766962\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\H0766962\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\H0766962\\.nuget\\packages\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
+    "C:\\Users\\H0766962\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

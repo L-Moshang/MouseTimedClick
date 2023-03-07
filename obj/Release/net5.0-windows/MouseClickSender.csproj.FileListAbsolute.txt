@@ -6,11 +6,9 @@ D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\Mouse
 D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\ref\MouseClickSender.dll
 D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\MouseClickSender.pdb
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.csprojAssemblyReference.cache
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MainWindow.g.cs
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\App.g.cs
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender_MarkupCompile.cache
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender_MarkupCompile.lref
-D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MainWindow.baml
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.g.resources
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.GeneratedMSBuildEditorConfig.editorconfig
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.AssemblyInfoInputs.cache
@@ -20,3 +18,12 @@ D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\Mouse
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\ref\MouseClickSender.dll
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.pdb
 D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.genruntimeconfig.cache
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\MaterialDesignColors.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\Newtonsoft.Json.dll
+D:\Users\H0766962\source\repos\MouseClickSender\bin\Release\net5.0-windows\ShowMeTheXAML.dll
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\App.baml
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\View\MainWindow.g.cs
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\View\MainWindow.baml
+D:\Users\H0766962\source\repos\MouseClickSender\obj\Release\net5.0-windows\MouseClickSender.csproj.CopyComplete
